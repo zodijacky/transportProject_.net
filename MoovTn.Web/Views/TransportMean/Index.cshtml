@@ -1,0 +1,67 @@
+﻿@model IEnumerable<MoovTn.Domain.Models.TransportMean>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <h2>Available Transport Means</h2>
+    <br />
+    <div class="row">
+        <div class="col-md-3">
+            <aside class="sidebar-left">
+
+
+
+                <div class="sidebar-widget">
+                    <h4>Facebook</h4>
+                    <div class="fb-like-box" data-href="https://www.facebook.com/MoovTn" data-colorscheme="light" data-show-faces="1" data-header="1" data-show-border="1" data-width="233"></div>
+                </div>
+            </aside>
+        </div>
+        <div class="col-md-9"><p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table table-bordered table-striped table-booking-history">
+    <tr>
+        <th style="text-align: center">
+            Serial
+        </th>
+        <th style="text-align: center">
+         State
+        </th>
+        <th style="text-align: center">
+          Type
+        </th>
+        <th style="text-align: center"></th>
+    </tr>
+
+    @foreach (var item in Model) {
+        <tr>
+            <td style="text-align: center">
+                @Html.DisplayFor(modelItem => item.serial)
+            </td>
+            <td style="text-align: center">
+                @Html.DisplayFor(modelItem => item.state)
+            </td>
+            <td style="text-align: center">
+                @Html.DisplayFor(modelItem => item.type)
+            </td>
+            <td style="text-align: center">
+                @Html.ActionLink("Edit", "Edit", new { id = item.serial }) |
+             
+                @Html.ActionLink("Delete", "Delete", new { id = item.serial })
+
+
+
+            </td>
+        </tr>
+}
+
+</table>
+        </div>
+    </div>
+      
+
+    </div>

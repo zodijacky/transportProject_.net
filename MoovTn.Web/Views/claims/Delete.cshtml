@@ -1,0 +1,24 @@
+﻿@model MoovTn.Domain.Models.Claim
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<h3>Are you sure you want to delete this claim?</h3>
+<div>
+
+    <hr />
+
+
+    @using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+
+    <div class="form-actions no-color">
+        <input type="submit" value="Yes" class="btn icon-btn btn-danger" /> |
+        <a class="btn icon-btn btn-info" href="@Url.Content("/claims/Index/")"><span class=""></span>  No  </a>  
+
+    </div>
+    }
+</div>

@@ -1,0 +1,411 @@
+﻿@using Microsoft.AspNet.Identity
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Traveler - Index 1</title>
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="keywords" content="Template, html, premium, themeforest" />
+    <meta name="description" content="Traveler - Premium template for travel companies">
+    <meta name="author" content="Tsoy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
+    <!-- /GOOGLE FONTS -->
+    <link rel="stylesheet" href="@Url.Content("~/Content/transport/css/bootstrap.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/transport/css/font-awesome.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/transport/css/icomoon.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/transport/css/styles.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/transport/css/mystyles.css")">
+    <script src="@Url.Content("~/Content/transport/js/modernizr.js")"></script>
+
+    @* Like facebooook*****************************************@
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5&appId=778528452253121";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    @* share facebooook*****************************************@
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5&appId=778528452253121";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    @* send facebooook*****************************************@
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5&appId=778528452253121";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5&appId=778528452253121";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.5&appId=778528452253121";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+
+    @if (Request.IsAuthenticated && User.IsInRole("Client"))
+    {
+        <script type="text/javascript">
+            function notif() {
+
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("NbrNotification", "notifications")',
+                    data: param = "",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: successFunc,
+                    error: errorFunc
+                });
+
+                function successFunc(data, status) {
+                    if(data!=0)
+                    document.getElementById("notification").innerHTML = data;
+
+                }
+
+                function errorFunc() {
+                    alert('Notification Server under construction');
+                }
+            }
+
+        </script>
+
+    }
+
+
+    <style>
+        #notification {
+            background-color: orange;
+            color: white;
+        }
+
+        #tete.floatable {
+            position: fixed;
+            top: 10px;
+            margin-top: 50px;
+        }
+
+        .btn-circle {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            padding: 6px 0;
+            font-size: 12px;
+            line-height: 1.428571429;
+            border-radius: 15px;
+        }
+
+            .btn-circle.btn-lg {
+                width: 50px;
+                height: 50px;
+                padding: 10px 16px;
+                font-size: 18px;
+                line-height: 1.33;
+                border-radius: 25px;
+            }
+
+            .btn-circle.btn-xl {
+                width: 70px;
+                height: 70px;
+                padding: 10px 16px;
+                font-size: 24px;
+                line-height: 1.33;
+                border-radius: 35px;
+            }
+    </style>
+
+
+
+
+
+
+    @RenderSection("header", false)
+
+    @RenderSection("Styles", false)
+
+
+</head>
+
+
+<body>
+
+    @if (Request.IsAuthenticated && User.IsInRole("Client"))
+    {
+        <span onload="setInterval(function() {notif();}, 5000);"></span>
+    }
+    <div class="global-wrap">
+        <header id="main-header">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a class="logo" href="@Url.Action("Index","Home")">
+                                <img src="@Url.Content("~/Content/transport/img/logo-invert.png")" alt="Image Alternative text" title="Image Title" />
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            
+                        </div>
+                        
+                        <div class="col-md-5">
+                            <div class="top-user-area clearfix">
+                                <ul class="top-user-area-list list list-horizontal list-border">
+
+                                    <li class="top-user-area-avatar">
+                                        @Html.Partial("_LoginPartial")
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <a href="@Url.Content("~/notifications/Posts")"><img src="@Url.Content("~/Content/Images/rss.png")" style="width: 25px; height: 25px; margin-top: 10px;" /></a>
+                            <a href="@Url.Action("FbComments","Home")"><img src="@Url.Content("~/Content/Images/fb.png")" style="width: 25px; height: 25px; margin-top: 10px;" /></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="nav">
+
+                    @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                    {
+                        <ul class="slimmenu" id="slimmenu">
+                            <li>
+                                <a href="#">Ressources</a>
+                                <ul>
+                                    <li>
+                                        <a href="@Url.Action("Index","TransportMean")">Transport Means</a>
+
+                                    </li>
+
+                                    <li>
+                                        <a href="@Url.Action("Index","Station")">Stations</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="@Url.Action("Index","Line")">Lines</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="@Url.Action("Index","Trip")">Trips</a>
+
+                                    </li>
+
+                                </ul>
+
+                            </li>
+
+
+                            <li>
+                                <a href="@Url.Action("Index","claimsAdmin")">Claims</a>
+
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Index","subscriptioncardsAdmin")">Subscription Cards</a>
+
+                            </li>
+                           
+
+
+                        </ul>
+                    }
+                    else if (Request.IsAuthenticated && User.IsInRole("Client"))
+                    {
+                        <ul class="slimmenu" id="slimmenu">
+
+
+                            <li>
+                                <a href="@Url.Action("Index","Home")">Home</a>
+
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Index","TripStation")">Plan A Journey</a>
+
+                            </li>
+                            <li>
+                                <a href="@Url.Action("IndexFront","Line")">Maps</a>
+
+                            </li>
+                            <li>
+                                <a href="#">E-Services</a>
+                                <ul>
+                                    <li>
+                                        <a href="@Url.Action("Index","subscriptioncards")">Get A Card</a>
+                                    </li>
+                                    <li>
+                                        <a href="@Url.Action("Create","Rent")">Rent Request</a>
+                                    </li>
+                                    <li>
+                                        <a href="@Url.Action("Index","Rent",new { id=User.Identity.GetUserId()})">My Rent Requests</a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Index","notifications")"><span id="notification"></span> Notifications</a>
+
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Index", "claims")">Claims</a>
+
+                            </li>
+
+                        </ul>
+                    }
+                    else
+                    {
+                        <ul class="slimmenu" id="slimmenu">
+
+
+                            <li>
+                                <a href="@Url.Action("Index","Home")">Home</a>
+
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Index","TripStation")">Plan A Journey</a>
+
+                            </li>
+                            <li>
+                                <a href="@Url.Action("IndexFront","Line")">Maps</a>
+
+                            </li>
+
+
+                        </ul>
+                    }
+
+                </div>
+            </div>
+        </header>
+
+
+
+        @RenderBody()
+
+        @*<div style="text-align:center;width:201px;position:fixed;bottom:0;right:0;z-index:1000">
+            <!-- LiveZilla Chat Button Link Code (ALWAYS PLACE IN BODY ELEMENT) --><!-- LiveZilla Tracking Code (ALWAYS PLACE IN BODY ELEMENT) --><div id="livezilla_tracking" style="display:none"></div>
+            <script type="text/javascript">
+var script = document.createElement("script");script.async=true;script.type="text/javascript";var src = "https://127.0.0.1/Livezilla/server.php?a=b51c4&rqst=track&output=jcrpt&nse="+Math.random();setTimeout("script.src=src;document.getElementById('livezilla_tracking').appendChild(script)",1);</script><noscript><img src="http://127.0.0.1/Livezilla/server.php?a=b51c4&amp;rqst=track&amp;output=nojcrpt" width="0" height="0" style="visibility:hidden;" alt=""></noscript><!-- http://www.LiveZilla.net Tracking Code --><a href="javascript:void(window.open('http://127.0.0.1/Livezilla/chat.php?a=0a138','','width=610,height=760,left=0,top=0,resizable=yes,menubar=no,location=no,status=yes,scrollbars=yes'))" class="lz_cbl"><img src="http://127.0.0.1/Livezilla/image.php?a=e7684&amp;id=1&amp;type=inlay" width="201" height="53" style="border:0px;" alt="LiveZilla Live Chat Software"></a><!-- http://www.LiveZilla.net Chat Button Link Code --><div style="margin-top:2px;"><a href="http://www.livezilla.net" target="_blank" title="LiveZilla  Live Chat Software" style="font-size:11px;color:#b7b7b7;text-decoration:none;font-family:verdana,arial,tahoma;">LiveZilla  Live Chat Software</a></div>
+        </div>*@
+        <footer id="main-footer">
+            <div class="container">
+                <div class="row row-wrap">
+                    <div class="col-md-3">
+                        <a class="logo" href='@Url.Action("Index","Home")'>
+                            <img src="@Url.Content("~/Content/transport/img/logo-invert.png")" alt="Image Alternative text" title="Image Title" />
+                        </a>
+
+
+
+                        <p class="mb20">MoovTn aims to give customers an appropriate service, tailored to their needs through an
+
+application that will help them choose a suitable mean of transport by providing all the needed details
+
+about lines, timing, online reservations and payment … </p>
+                        <ul class="list list-horizontal list-space">
+                            <li>
+                                <a class="fa fa-facebook box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="fa fa-twitter box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="fa fa-google-plus box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="fa fa-linkedin box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                            </li>
+                            <li>
+                                <a class="fa fa-pinterest box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Newsletter</h4>
+                        <form>
+                            <label>Enter your E-mail Address</label>
+                            <input type="text" class="form-control">
+                            <p class="mt5">
+                                <small>*We Never Send Spam</small>
+                            </p>
+                            <input type="submit" class="btn btn-primary" value="Subscribe">
+                        </form>
+                    </div>
+                    <div class="col-md-2">
+                     
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Have Questions?</h4>
+                        <h4 class="text-color">+216-71-100-100</h4>
+                        <h4><a href="#" class="text-color">support@moovtn.com</a></h4>
+                        <p>24/7 Dedicated Customer Support</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+
+        <script src="@Url.Content("~/Content/transport/js/slimmenu.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/bootstrap-datepicker.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/bootstrap-timepicker.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/nicescroll.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/dropit.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/ionrangeslider.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/icheck.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/fotorama.js")"></script>
+
+        <script src="@Url.Content("~/Content/transport/js/typeahead.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/card-payment.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/magnific.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/owl-carousel.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/fitvids.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/tweet.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/countdown.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/gridrotator.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/custom.js")"></script>
+
+
+        <script src="@Url.Content("~/Content/transport/js/gridrotator.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/custom.js")"></script>
+
+
+        @RenderSection("footer", false)
+        @RenderSection("Scripts", false)
+    </div>
+</body>
+</html>

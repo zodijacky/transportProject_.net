@@ -1,0 +1,81 @@
+﻿@model IEnumerable<MoovTn.Domain.Models.Rent>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <h2>Available Rents</h2>
+    <div class="row">
+        <div class="col-md-3">
+            <aside class="sidebar-left">
+
+
+
+                <div class="sidebar-widget">
+                    <h4>Facebook</h4>
+                    <div class="fb-like-box" data-href="https://www.facebook.com/MoovTn" data-colorscheme="light" data-show-faces="1" data-header="1" data-show-border="1" data-width="233"></div>
+                </div>
+            </aside>
+        </div>
+        <div class="col-md-9">
+
+            <p>
+                @Html.ActionLink("Create New", "Create")
+            </p>
+            <table class="table table-bordered table-striped table-booking-history">
+                <tr>
+                    <th style="text-align: center">
+                        Number Of Places:
+                    </th>
+                    <th style="text-align: center">
+                        Arrival Date:
+                    </th>
+                    <th style="text-align: center">
+                        Departure Date:
+                    </th>
+                    <th style="text-align: center">
+                        Request Status:
+                    </th>
+
+
+
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model) {
+                    <tr>
+                        <td style="text-align: center">
+                            @Html.DisplayFor(modelItem => item.members)
+                        </td>
+                        <td style="text-align: center">
+                            @Html.DisplayFor(modelItem => item.rentEnd)
+                        </td>
+                        <td style="text-align: center">
+                            @Html.DisplayFor(modelItem => item.rentStart)
+                        </td>
+                        <td style="text-align: center">
+                            @Html.DisplayFor(modelItem => item.status)
+                        </td>
+
+                        <td>
+
+                            @Html.ActionLink("Details", "Details", new { id=item.id })
+
+                        </td>
+                    </tr>
+}
+
+            </table>
+
+
+
+
+        </div>
+    
+    
+    
+    
+    </div>
+          
+        </div>

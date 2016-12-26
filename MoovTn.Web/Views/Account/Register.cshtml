@@ -1,0 +1,144 @@
+﻿@model MoovTn.Web.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+<h2>@ViewBag.Title.</h2>
+<br/>
+<div class="row">
+    <div class="col-md-12">
+        <section id="loginForm">
+            @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+
+                @Html.AntiForgeryToken()
+                <h3>Create a new account.</h3>
+               
+                @Html.ValidationSummary("", new { @class = "text-danger" })
+
+                <div class="row">
+                    <div class="col-md-5 ">
+                        <div class="form-group form-group-ghost form-group-icon-left">
+                            <i class="fa fa-user input-icon input-icon-show"></i>
+                            <label class="control-label">First Name</label>
+
+
+                            @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+
+                        </div>
+                    </div>
+                    <div class="col-md-offset-1 col-md-5">
+                        <div class="form-group form-group-ghost form-group-icon-left">
+                            <i class="fa fa-user input-icon input-icon-show"></i>
+                            <label class="control-label">Last Name</label>
+
+                            @Html.TextBoxFor(m => m.lastName, new { @class = "form-control" })
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-5 ">
+                        <div class="form-group form-group-ghost form-group-icon-left">
+                            <i class="fa fa-envelope input-icon input-icon-show"></i>
+                            @Html.LabelFor(m => m.Email, new { @class = "control-label" })
+
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-offset-1 col-md-5 ">
+
+                        <div class="form-group form-group-ghost form-group-icon-left">
+                            <i class="fa fa-credit-card input-icon input-icon-show"></i>
+                            <label class="control-label">CIN</label>
+
+                            @Html.TextBoxFor(m => m.Cin, new { @class = "form-control" })
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="form-group form-group-ghost form-group-icon-left">
+                            
+                            <label class="control-label">Birthdate</label>
+
+                            @Html.TextBoxFor(model => model.birthdate, new { type = "date" })
+
+                        </div>
+                    </div>
+                    <div class="col-md-offset-1 col-md-5">
+                        <div class="form-group form-group-ghost form-group-icon-left">
+                            <i class="fa fa-phone input-icon input-icon-show"></i>
+                            <label class="control-label">Phone Number</label>
+
+
+                            @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control" })
+
+                        </div>
+                    </div>
+                    
+                </div>
+               
+               <div class="row">
+                   <div class="col-md-5">
+                       <div class="form-group form-group-ghost form-group-icon-left">
+                           <i class="fa fa-lock input-icon input-icon-show"></i>
+                           <label class="control-label">Password</label>
+
+
+                           @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+
+                       </div>
+                   </div>
+                   <div class="col-md-offset-1 col-md-5">
+                       <div class="form-group form-group-ghost form-group-icon-left">
+                           <i class="fa fa-lock input-icon input-icon-show"></i>
+                           <label class="control-label">Confirm Password</label>
+
+
+                           @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+
+                       </div>
+                   </div>
+               </div>
+               
+                
+
+
+                <div class="form-group">
+
+                    <div class="col-md-offset-2 col-md-9">
+                        <input type="submit" class="btn btn-primary" value="Register" style="float: right;" />
+                    </div>
+                </div>
+            }
+        </section>
+    </div>
+</div>
+
+@section header{
+    <style>
+        input[type="date"]{
+    
+        background: rgba(255,255,255,0.1) ;
+        border-color: #fff;
+        color: #fff;
+    display: block;
+    width: 100%;
+    height: 34px;
+     font-size: 14px ;
+     padding: 6px 12px;
+         transition: 0.3s;
+   
+    }
+
+    </style>
+    
+    }
+
+
+            

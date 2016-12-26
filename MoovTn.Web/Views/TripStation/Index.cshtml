@@ -1,0 +1,152 @@
+﻿@model MoovTn.Web.Models.TripStationModel
+    
+
+@{
+    ViewBag.Title = "Plan You Journey";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+
+    <h2>Plan Your Journey</h2>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        
+        <div class="form-horizontal">
+            <h4>Choose your departure and your destination stations</h4>
+            <br /><br />
+            
+
+            <div class="row">
+                <div class="col-md-3">
+                    <aside class="sidebar-left">
+                  
+                     
+                      
+                        <div class="sidebar-widget">
+                            <h4>Facebook</h4>
+                            <div class="fb-like-box" data-href="https://www.facebook.com/MoovTn" data-colorscheme="light" data-show-faces="1" data-header="1" data-show-border="1" data-width="233"></div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-md-9">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    Departure Station
+
+
+                                </div>
+                                <div class="col-md-8">
+                                    @Html.DropDownListFor(model => model.SDepId, Model.Stations, new { @class = "form-control" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    Arrival Station
+                                </div>
+                                <div class="col-md-8">
+                                    @Html.DropDownListFor(model => model.SArrivId, Model.Stations, new { @class = "form-control" })
+                                </div>
+                            </div>
+                        </div>
+                    </div> <br />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    Date:
+                                </div>
+
+                                <div class="col-md-8">
+
+                                    @Html.TextBoxFor(model => model.Date, "{0:yyyy-MM-dd}", new { type = "date", @class = "form-control" })
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    Time:
+                                </div>
+
+                                <div class="col-md-8">
+
+                                    @Html.TextBoxFor(model => model.Time, "{0:HH:mm}", new { type = "time", @class = "form-control" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" style="float:right;" value="Search" class="btn btn-primary" />
+
+                        </div>
+                    </div><br />
+                    <table class="table table-bordered table-striped table-booking-history">
+                        <tr>
+                            <th style="text-align: center">
+                                Arrival Time
+                            </th>
+
+                            <th style="text-align: center">
+                                Line
+                            </th>
+                            <th style="text-align: center">
+                                Transport Mean
+                            </th>
+                            <th style="text-align: center">
+                                Estimated Arrival Time
+                            </th>
+                            <th style="text-align: center">
+
+                            </th>
+                        </tr>
+
+                        @foreach (var item in Model.trips)
+                        {
+                            <tr>
+                                <td style="text-align: center">
+                                    @Html.DisplayFor(model => model.ArrivalTime)
+                                </td>
+
+                                <td style="text-align: center">
+                                    @Html.DisplayFor(modelItem => item.line.name)
+                                </td>
+                                <td style="text-align: center">
+                                    @Html.DisplayFor(modelItem => item.line.type)
+                                </td>
+                                <td style="text-align: center">
+                                    @Html.DisplayFor(model => model.EstimationTime)
+                                </td>
+                                <td style="text-align: center">
+
+                                    <a href='@Url.Action("Details", "Line")?id= @Html.DisplayFor(modelItem => item.line.id)'>Line Details</a>
+                                </td>
+                            </tr>
+                        }
+
+                    </table>
+                </div>
+
+            </div>
+            
+     
+        </div>
+
+    }
+    <p>
+
+    </p>
+   
+
+</div>
+

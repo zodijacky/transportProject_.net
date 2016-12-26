@@ -1,0 +1,83 @@
+c:\users\khouloud\documents\visual studio 2015\Projects\MoovTn\Service.Pattern\bin\Debug\Service.Pattern.dll
+c:\users\khouloud\documents\visual studio 2015\Projects\MoovTn\Service.Pattern\bin\Debug\Service.Pattern.pdb
+c:\users\khouloud\documents\visual studio 2015\Projects\MoovTn\Service.Pattern\obj\Debug\Service.Pattern.csprojResolveAssemblyReference.cache
+c:\users\khouloud\documents\visual studio 2015\Projects\MoovTn\Service.Pattern\obj\Debug\Service.Pattern.dll
+c:\users\khouloud\documents\visual studio 2015\Projects\MoovTn\Service.Pattern\obj\Debug\Service.Pattern.pdb
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\Service.Pattern\bin\Debug\Service.Pattern.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\Service.Pattern\bin\Debug\Service.Pattern.pdb
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\Service.Pattern\bin\Debug\MoovTn.Data.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\Service.Pattern\bin\Debug\MoovTn.Domain.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\Service.Pattern\bin\Debug\EntityFramework.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\Service.Pattern\bin\Debug\MoovTn.Data.pdb
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\Service.Pattern\bin\Debug\MoovTn.Domain.pdb
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\Service.Pattern\bin\Debug\EntityFramework.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\Service.Pattern\obj\Debug\Service.Pattern.csprojResolveAssemblyReference.cache
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\Service.Pattern\obj\Debug\Service.Pattern.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\Service.Pattern\obj\Debug\Service.Pattern.pdb
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\Service.Pattern\bin\Debug\Service.Pattern.dll.config
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\Service.Pattern\bin\Debug\EntityFramework.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\Service.Pattern\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\Service.Pattern\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\Service.Pattern\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\Service.Pattern\bin\Debug\MoovTn.Data.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\Service.Pattern\bin\Debug\MoovTn.Domain.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\Service.Pattern\bin\Debug\MoovTn.Data.pdb
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\Service.Pattern\bin\Debug\MoovTn.Domain.pdb
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\Service.Pattern\bin\Debug\EntityFramework.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\Service.Pattern\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\Service.Pattern\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\Service.Pattern\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\backupPidev\MoovTN\Service.Pattern\bin\Debug\Service.Pattern.dll.config
+D:\backupPidev\MoovTN\Service.Pattern\bin\Debug\Service.Pattern.dll
+D:\backupPidev\MoovTN\Service.Pattern\bin\Debug\Service.Pattern.pdb
+D:\backupPidev\MoovTN\Service.Pattern\bin\Debug\EntityFramework.dll
+D:\backupPidev\MoovTN\Service.Pattern\bin\Debug\EntityFramework.SqlServer.dll
+D:\backupPidev\MoovTN\Service.Pattern\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\backupPidev\MoovTN\Service.Pattern\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\backupPidev\MoovTN\Service.Pattern\bin\Debug\MoovTn.Data.dll
+D:\backupPidev\MoovTN\Service.Pattern\bin\Debug\MoovTn.Domain.dll
+D:\backupPidev\MoovTN\Service.Pattern\bin\Debug\MoovTn.Data.pdb
+D:\backupPidev\MoovTN\Service.Pattern\bin\Debug\MoovTn.Domain.pdb
+D:\backupPidev\MoovTN\Service.Pattern\bin\Debug\EntityFramework.xml
+D:\backupPidev\MoovTN\Service.Pattern\bin\Debug\EntityFramework.SqlServer.xml
+D:\backupPidev\MoovTN\Service.Pattern\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\backupPidev\MoovTN\Service.Pattern\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\backupPidev\MoovTN\Service.Pattern\obj\Debug\Service.Pattern.csprojResolveAssemblyReference.cache
+D:\backupPidev\MoovTN\Service.Pattern\obj\Debug\Service.Pattern.dll
+D:\backupPidev\MoovTN\Service.Pattern\obj\Debug\Service.Pattern.pdb
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\Service.Pattern.dll.config
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\Service.Pattern.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\Service.Pattern.pdb
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\EntityFramework.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\EntityFramework.SqlServer.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\MoovTn.Data.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\MoovTn.Domain.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\MoovTn.Data.pdb
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\MoovTn.Domain.pdb
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\EntityFramework.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\EntityFramework.SqlServer.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\Service.Pattern\obj\Debug\Service.Pattern.csprojResolveAssemblyReference.cache
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\Service.Pattern\obj\Debug\Service.Pattern.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\Service.Pattern\obj\Debug\Service.Pattern.pdb
+C:\Users\Asma\Desktop\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\Service.Pattern.dll.config
+C:\Users\Asma\Desktop\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\Service.Pattern.dll
+C:\Users\Asma\Desktop\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\Service.Pattern.pdb
+C:\Users\Asma\Desktop\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\EntityFramework.dll
+C:\Users\Asma\Desktop\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Asma\Desktop\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Asma\Desktop\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Asma\Desktop\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\MoovTn.Data.dll
+C:\Users\Asma\Desktop\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\MoovTn.Domain.dll
+C:\Users\Asma\Desktop\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\MoovTn.Data.pdb
+C:\Users\Asma\Desktop\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\MoovTn.Domain.pdb
+C:\Users\Asma\Desktop\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\EntityFramework.xml
+C:\Users\Asma\Desktop\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Asma\Desktop\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Asma\Desktop\MoovTnAvnattemplate\MoovTN\Service.Pattern\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Asma\Desktop\MoovTnAvnattemplate\MoovTN\Service.Pattern\obj\Debug\Service.Pattern.csprojResolveAssemblyReference.cache
+C:\Users\Asma\Desktop\MoovTnAvnattemplate\MoovTN\Service.Pattern\obj\Debug\Service.Pattern.dll
+C:\Users\Asma\Desktop\MoovTnAvnattemplate\MoovTN\Service.Pattern\obj\Debug\Service.Pattern.pdb

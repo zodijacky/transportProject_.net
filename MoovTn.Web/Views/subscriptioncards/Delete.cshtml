@@ -1,0 +1,65 @@
+﻿@model MyTransport.Domain.Models.subscriptioncard
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>subscriptioncard</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.user.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.user.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.expired)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.expired)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.locked)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.locked)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.validityEnd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.validityEnd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.validityStart)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.validityStart)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

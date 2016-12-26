@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoovTn.Web", "MoovTn.Web\MoovTn.Web.csproj", "{AAE5A708-23EC-479A-B7D9-6F8E394F649A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoovTn.Data", "MoovTn.Data\MoovTn.Data.csproj", "{5ECA40ED-553F-4A85-B6CC-260A9CB9EAC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoovTn.Domain", "MoovTn.Domain\MoovTn.Domain.csproj", "{7C3E05D5-1D3C-486D-8D66-A188E621F04C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoovTn.Service", "MoovTn.Service\MoovTn.Service.csproj", "{971AEFBF-0A11-4EED-BF96-5189C16EE216}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Pattern", "Service.Pattern\Service.Pattern.csproj", "{C3D0E25F-1BDC-44BC-8143-9A0D64E4DCC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoovTn.Console", "MoovTn.Console\MoovTn.Console.csproj", "{6C223F9B-554E-48CF-ACED-06F132A45DCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAE5A708-23EC-479A-B7D9-6F8E394F649A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAE5A708-23EC-479A-B7D9-6F8E394F649A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAE5A708-23EC-479A-B7D9-6F8E394F649A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAE5A708-23EC-479A-B7D9-6F8E394F649A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ECA40ED-553F-4A85-B6CC-260A9CB9EAC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ECA40ED-553F-4A85-B6CC-260A9CB9EAC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ECA40ED-553F-4A85-B6CC-260A9CB9EAC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ECA40ED-553F-4A85-B6CC-260A9CB9EAC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C3E05D5-1D3C-486D-8D66-A188E621F04C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C3E05D5-1D3C-486D-8D66-A188E621F04C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C3E05D5-1D3C-486D-8D66-A188E621F04C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C3E05D5-1D3C-486D-8D66-A188E621F04C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{971AEFBF-0A11-4EED-BF96-5189C16EE216}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{971AEFBF-0A11-4EED-BF96-5189C16EE216}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{971AEFBF-0A11-4EED-BF96-5189C16EE216}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{971AEFBF-0A11-4EED-BF96-5189C16EE216}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3D0E25F-1BDC-44BC-8143-9A0D64E4DCC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3D0E25F-1BDC-44BC-8143-9A0D64E4DCC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3D0E25F-1BDC-44BC-8143-9A0D64E4DCC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3D0E25F-1BDC-44BC-8143-9A0D64E4DCC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C223F9B-554E-48CF-ACED-06F132A45DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C223F9B-554E-48CF-ACED-06F132A45DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C223F9B-554E-48CF-ACED-06F132A45DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C223F9B-554E-48CF-ACED-06F132A45DCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

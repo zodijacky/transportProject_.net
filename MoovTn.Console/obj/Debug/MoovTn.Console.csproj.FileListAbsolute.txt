@@ -1,0 +1,418 @@
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\csc.exe
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\System.Collections.Immutable.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\System.Reflection.Metadata.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\vbc.exe
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\VBCSCompiler.exe
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Console.exe.config
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Console.exe
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Console.pdb
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\EntityFramework.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Data.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Domain.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Web.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Service.Pattern.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.Optimization.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.Mvc.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Owin.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.Http.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Service.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\WebGrease.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.Razor.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Newtonsoft.Json.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Antlr3.Runtime.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Data.pdb
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Domain.pdb
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Web.pdb
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Service.Pattern.pdb
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\EntityFramework.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.Optimization.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.Mvc.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.Http.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Service.pdb
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.Razor.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Newtonsoft.Json.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Antlr3.Runtime.pdb
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\obj\Debug\MoovTn.Console.csprojResolveAssemblyReference.cache
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\obj\Debug\MoovTn.Console.exe
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\obj\Debug\MoovTn.Console.pdb
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Facebook.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Facebook.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Twilio.Api.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Google.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\RestSharp.dll
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Twilio.Api.pdb
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Twilio.Api.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Google.xml
+C:\Users\khouloud\Documents\Visual Studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\RestSharp.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\roslyn\csc.exe
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\roslyn\System.Collections.Immutable.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\roslyn\System.Reflection.Metadata.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\roslyn\vbc.exe
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\roslyn\VBCSCompiler.exe
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\roslyn\VBCSCompiler.exe.config
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Console.exe.config
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Console.exe
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Console.pdb
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\EntityFramework.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\EntityFramework.SqlServer.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Data.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Domain.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Web.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Service.Pattern.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\System.Web.Optimization.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\System.Web.Mvc.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Twilio.Api.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Owin.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Google.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\System.Web.Http.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Service.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Facebook.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\System.Web.Http.WebHost.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\WebGrease.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\System.Web.Razor.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.Razor.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\RestSharp.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Newtonsoft.Json.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\System.Net.Http.Formatting.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Antlr3.Runtime.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Data.pdb
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Domain.pdb
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Web.pdb
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Service.Pattern.pdb
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\EntityFramework.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\EntityFramework.SqlServer.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\System.Web.Optimization.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\System.Web.Mvc.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Twilio.Api.pdb
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Twilio.Api.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Google.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\System.Web.Http.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Service.pdb
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Facebook.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\System.Web.Http.WebHost.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\System.Web.Razor.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.Razor.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\RestSharp.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Newtonsoft.Json.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\System.Net.Http.Formatting.xml
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\Antlr3.Runtime.pdb
+D:\backupPidev\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\backupPidev\MoovTN\MoovTn.Console\obj\Debug\MoovTn.Console.csprojResolveAssemblyReference.cache
+D:\backupPidev\MoovTN\MoovTn.Console\obj\Debug\MoovTn.Console.exe
+D:\backupPidev\MoovTN\MoovTn.Console\obj\Debug\MoovTn.Console.pdb
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\roslyn\csc.exe
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\roslyn\System.Collections.Immutable.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\roslyn\System.Reflection.Metadata.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\roslyn\vbc.exe
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\roslyn\VBCSCompiler.exe
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\roslyn\VBCSCompiler.exe.config
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Console.exe.config
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Console.exe
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Console.pdb
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\EntityFramework.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\EntityFramework.SqlServer.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Data.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Domain.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Web.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Service.Pattern.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\System.Web.Optimization.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\System.Web.Mvc.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Twilio.Api.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Owin.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Google.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\System.Web.Http.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Service.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Facebook.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\System.Web.Http.WebHost.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\WebGrease.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\System.Web.Razor.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.Razor.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\RestSharp.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Newtonsoft.Json.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\System.Net.Http.Formatting.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Antlr3.Runtime.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Data.pdb
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Domain.pdb
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Web.pdb
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Service.Pattern.pdb
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\EntityFramework.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\EntityFramework.SqlServer.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\System.Web.Optimization.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\System.Web.Mvc.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Twilio.Api.pdb
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Twilio.Api.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Google.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\System.Web.Http.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Service.pdb
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Facebook.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\System.Web.Http.WebHost.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\System.Web.Razor.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.Razor.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\RestSharp.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Newtonsoft.Json.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\System.Net.Http.Formatting.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\Antlr3.Runtime.pdb
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\obj\Debug\MoovTn.Console.csprojResolveAssemblyReference.cache
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\obj\Debug\MoovTn.Console.exe
+D:\backupPidev\MoovTnAvnattemplate\MoovTN\MoovTn.Console\obj\Debug\MoovTn.Console.pdb
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\roslyn\csc.exe
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\roslyn\System.Collections.Immutable.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\roslyn\vbc.exe
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\roslyn\VBCSCompiler.exe
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Console.exe.config
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Console.exe
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Console.pdb
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\EntityFramework.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Data.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Domain.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Web.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Service.Pattern.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\System.Web.Optimization.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\System.Web.Mvc.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Twilio.Api.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Owin.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Google.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\System.Web.Http.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Service.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\WebGrease.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\System.Web.Razor.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\RestSharp.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Antlr3.Runtime.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Data.pdb
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Domain.pdb
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Web.pdb
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Service.Pattern.pdb
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\EntityFramework.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\System.Web.Optimization.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\System.Web.Mvc.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Twilio.Api.pdb
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Twilio.Api.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Google.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\System.Web.Http.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Service.pdb
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\System.Web.Razor.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\RestSharp.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Antlr3.Runtime.pdb
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\obj\Debug\MoovTn.Console.csprojResolveAssemblyReference.cache
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\obj\Debug\MoovTn.Console.exe
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\obj\Debug\MoovTn.Console.pdb
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Terradue.ServiceModel.Syndication.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\PayPal.dll
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\PayPal.xml
+C:\Users\Mimo\Desktop\PI-Dev Sprint2\MoovTN\MoovTn.Console\bin\Debug\Rotativa.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\csc.exe
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\System.Collections.Immutable.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\System.Reflection.Metadata.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\vbc.exe
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\VBCSCompiler.exe
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\roslyn\VBCSCompiler.exe.config
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Console.exe.config
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Console.exe
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Console.pdb
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\EntityFramework.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Data.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Domain.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Web.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Service.Pattern.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\PayPal.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.Mvc.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Terradue.ServiceModel.Syndication.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.Optimization.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Twilio.Api.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Owin.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Google.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.Http.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Service.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Rotativa.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.Razor.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\WebGrease.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\RestSharp.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Antlr3.Runtime.dll
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Data.pdb
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Domain.pdb
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Web.pdb
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Service.Pattern.pdb
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\EntityFramework.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\PayPal.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.Mvc.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.Optimization.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Twilio.Api.pdb
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Twilio.Api.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Google.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.Http.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\MoovTn.Service.pdb
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.Razor.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\RestSharp.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\bin\Debug\Antlr3.Runtime.pdb
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\obj\Debug\MoovTn.Console.csprojResolveAssemblyReference.cache
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\obj\Debug\MoovTn.Console.exe
+C:\Users\Amine\documents\visual studio 2015\Projects\MoovTN\MoovTn.Console\obj\Debug\MoovTn.Console.pdb

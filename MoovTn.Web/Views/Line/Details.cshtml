@@ -1,0 +1,229 @@
+﻿@model MoovTn.Web.Models.LineListModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <h2>About @Html.DisplayFor(model => model.Name)    Line</h2>
+
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="row">
+                <ul class="order-payment-list list-group">
+                    <li style="list-style: none">
+                        <div class="row">
+
+                            <h5><i class="fa fa-map-marker"></i>@Html.DisplayFor(model => model.Name)</h5>
+
+                        </div>
+                    </li>
+                    <li style="list-style: none">
+                        <div class="row">
+
+                            <h5><i class="fa fa-bank"></i>@Html.DisplayFor(model => model.Type) line</h5>
+
+
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <aside class="sidebar-left">
+                    <div class="sidebar-widget">
+                        <h4>Facebook</h4>
+                        <div class="fb-like-box" data-href="https://www.facebook.com/MoovTn" data-colorscheme="light" data-show-faces="1" data-header="1" data-show-border="1" data-width="233"></div>
+                    </div>
+                </aside>
+            </div>
+
+
+        </div>
+
+        <div class="col-md-9">
+         
+
+
+            <div id="map"></div>
+        
+        
+        </div></div>
+
+         
+        </div><br />
+
+        @section header{
+            <style>
+                html, body {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                #map {
+                    height: 470px;
+                    width: 100%;
+                }
+
+                #formulaire {
+                    height: 13%;
+                    background-color: white;
+                    position: relative;
+                    bottom: 15%;
+                    width: 70%;
+                    margin: 0 auto;
+                    border: 1px solid transparent;
+                    border-radius: 2px 0 0 2px;
+                    box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    outline: none;
+                    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+                }
+
+                #msgError {
+                    color: red;
+                    font-size: 12px;
+                    margin-left: 12px;
+                    position: relative;
+                    bottom: 15%;
+                }
+
+                #formulaire input, #formulaire select {
+                    padding: 5px;
+                    margin: 10px;
+                    opacity: 1;
+                    color: black;
+                    background: white;
+                    width: 30%;
+                }
+
+                    #formulaire input[type="button"] {
+                        cursor: pointer;
+                        width: 20%;
+                        border-radius: 5px;
+                        border: 1px solid transparent;
+                        color: white;
+                        background-color: #4d90fe;
+                    }
+
+                .controls {
+                    margin-top: 10px;
+                    border: 1px solid transparent;
+                    border-radius: 2px 0 0 2px;
+                    box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    height: 32px;
+                    outline: none;
+                    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+                }
+
+                #pac-input {
+                    background-color: #fff;
+                    font-family: Roboto;
+                    font-size: 15px;
+                    font-weight: 300;
+                    margin-left: 12px;
+                    padding: 0 11px 0 13px;
+                    text-overflow: ellipsis;
+                    width: 300px;
+                }
+
+                    #pac-input:focus {
+                        border-color: #4d90fe;
+                    }
+
+                .pac-container {
+                    font-family: Roboto;
+                }
+
+                #type-selector {
+                    color: #fff;
+                    background-color: #4d90fe;
+                    padding: 5px 11px 0px 11px;
+                }
+
+                    #type-selector label {
+                        font-family: Roboto;
+                        font-size: 13px;
+                        font-weight: 300;
+                        display: inline;
+                    }
+            </style>
+
+        }
+
+        @section footer{
+            <script>
+
+    console.log('@Html.Raw(Model.Stations)');
+
+            </script>
+            <script>
+	var map;
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 36.806409, lng: 10.183444},
+    zoom: 7
+  });
+
+
+
+  var infowindow = new google.maps.InfoWindow();
+
+
+  google.maps.event.addListenerOnce(map, 'idle', function(){
+	    map.setCenter({lat: 36.806409, lng: 10.183444})
+	});
+
+  var points = JSON.parse('@Html.Raw(Model.Path)');
+  var path = new google.maps.Polyline({
+    path: points.points,
+    geodesic: true,
+    strokeColor: '#FF0000',
+    strokeOpacity: 1.0,
+    strokeWeight: 6
+  });
+
+  path.setMap(map);
+
+
+  setMarkers(map);
+}
+function setMarkers(map) {
+
+	  var shape = {
+	    coords: [1, 1, 1, 20, 18, 20, 18, 1],
+	    type: 'poly'
+	  };
+
+	  var stations = JSON.parse('@Html.Raw(Model.Stations)');
+    //console.log(stations);
+
+	  for (var i = 0; i < stations.stations.length; i++) {
+	    var station = stations.stations[i];
+	    var img = "";
+	    switch (station.type) {
+	        case 'bus': img = '@Url.Content("~/Content/Icons/bus-station.png")'; break;
+	        case 'train': img = '@Url.Content("~/Content/Icons/train-station.png")'; break;
+	        case 'metro': img = '@Url.Content("~/Content/Icons/metro-station.png")'; break;
+	        case 'tram': img = '@Url.Content("~/Content/Icons/tram-station.png")'; break;
+	        case 'transfert': img = '@Url.Content("~/Content/Icons/transfert-station.png")'; break;
+	    }
+	    var marker = new google.maps.Marker({
+	      position: {lat: station.lat, lng: station.lng},
+	      map: map,
+	      icon: img,
+	      shape: shape,
+	      title: station.name,
+
+	    });
+	  }
+	}
+
+
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlFIKi7gWqv60RNeBFRhUn2GbUY35MHu0&libraries=places&callback=initMap"
+                    async defer></script>
+        }

@@ -1,0 +1,341 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TwilioFluent.Mvc3</name>
+    </assembly>
+    <members>
+        <member name="T:TwilioFluent.Mvc3.DialCallbackData">
+            <summary>
+            Container for Twilio data included in a Dial action callback.
+            </summary>
+        </member>
+        <member name="M:TwilioFluent.Mvc3.DialCallbackData.#ctor(TwilioFluent.Mvc3.TwilioController)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TwilioFluent.Mvc3.DialCallbackData"/> class.
+            </summary>
+            <param name="controller">The controller.</param>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.DialCallbackData.Status">
+            <summary>
+            The outcome of the Dial attempt. See the DialCallStatus enum for details.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.DialCallbackData.Sid">
+            <summary>
+            The call sid of the new call leg. This parameter is not sent after dialing a conference.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.DialCallbackData.Duration">
+            <summary>
+            The duration in seconds of the dialed call. This parameter is not sent after dialing a conference.
+            </summary>
+        </member>
+        <member name="T:TwilioFluent.Mvc3.GatherCallbackData">
+            <summary>
+            Container for Twilio data included in a Gather action callback.
+            </summary>
+        </member>
+        <member name="M:TwilioFluent.Mvc3.GatherCallbackData.#ctor(TwilioFluent.Mvc3.TwilioController)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TwilioFluent.Mvc3.GatherCallbackData"/> class.
+            </summary>
+            <param name="controller">The controller.</param>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.GatherCallbackData.Digits">
+            <summary>
+             When called back as an action from Gather, the digits the caller pressed,
+             excluding the finishOnKey digit if used.
+            </summary>
+        </member>
+        <member name="T:TwilioFluent.Mvc3.RecordCallbackData">
+            <summary>
+            Container for Twilio data included in a Record action callback.
+            </summary>
+        </member>
+        <member name="M:TwilioFluent.Mvc3.RecordCallbackData.#ctor(TwilioFluent.Mvc3.TwilioController)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TwilioFluent.Mvc3.GatherCallbackData"/> class.
+            </summary>
+            <param name="controller">The controller.</param>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.RecordCallbackData.Digits">
+            <summary>
+             When called back as an action from Record, the key (if any) pressed to end the
+             recording or 'hangup' if the caller hung up.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.RecordCallbackData.Uri">
+            <summary>
+            When called back as an action from Record, the URL of the recorded audio.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.RecordCallbackData.Duration">
+            <summary>
+            When called back as an action from Record, the time duration of the recorded audio.
+            </summary>
+        </member>
+        <member name="T:TwilioFluent.Mvc3.SmsCallbackData">
+            <summary>
+            Container for Twilio data included in a Sms action or status callbacks.
+            </summary>
+        </member>
+        <member name="M:TwilioFluent.Mvc3.SmsCallbackData.#ctor(TwilioFluent.Mvc3.TwilioController)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TwilioFluent.Mvc3.SmsCallbackData"/> class.
+            </summary>
+            <param name="controller">The controller.</param>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.SmsCallbackData.Sid">
+            <summary>
+             When called back as an action from Sms, contains the Sid Twilio has assigned for the
+             SMS message.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.SmsCallbackData.Status">
+            <summary>
+            The current status of the SMS message. This is usually 'sending'. But if you provide
+            an invalid number, this is 'invalid'.
+            </summary>
+        </member>
+        <member name="T:TwilioFluent.Mvc3.TranscribeCallbackData">
+            <summary>
+            Container for Twilio data included in a Transcribe action callback.
+            </summary>
+        </member>
+        <member name="M:TwilioFluent.Mvc3.TranscribeCallbackData.#ctor(TwilioFluent.Mvc3.TwilioController)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TwilioFluent.Mvc3.TranscribeCallbackData"/> class.
+            </summary>
+            <param name="controller">The controller.</param>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TranscribeCallbackData.Text">
+            <summary>
+             When called back as an action from Record's transcribe, contains the text of the transcription.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TranscribeCallbackData.Status">
+            <summary>
+            When called back as an action from Record's transcribe, the status of the transcription attempt.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TranscribeCallbackData.Uri">
+            <summary>
+            When called back as an action from Record's transcribe, The URL for the transcription's REST
+            API resource.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TranscribeCallbackData.RecordingUri">
+            <summary>
+            When called back as an action from Record's transcribe, the URL of the recorded audio.
+            </summary>
+        </member>
+        <member name="T:TwilioFluent.Mvc3.TwilioAuthorizeAttribute">
+            <summary>
+            Validates signatures on incoming Twilio requests.
+            </summary>
+        </member>
+        <member name="M:TwilioFluent.Mvc3.TwilioAuthorizeAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TwilioFluent.Mvc3.TwilioAuthorizeAttribute"/> class.
+            </summary>
+            <param name="authToken">Your application's Twilio auth token. Hint: Inherit from 
+            <see cref="T:TwilioFluent.Mvc3.TwilioAuthorizeAttribute"/> and hardcode it.</param>
+        </member>
+        <member name="M:TwilioFluent.Mvc3.TwilioAuthorizeAttribute.OnActionExecuting(System.Web.Mvc.ActionExecutingContext)">
+            <summary>
+            Called by the ASP.NET MVC framework before the action method executes.
+            </summary>
+            <param name="filterContext">The filter context.</param>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TwilioAuthorizeAttribute.AuthToken">
+            <summary>
+            Gets or sets your application's Twilio auth token.
+            </summary>
+        </member>
+        <member name="T:TwilioFluent.Mvc3.TwilioFluentRootExtensions">
+            <summary>
+            Helper extension methods to make it easy to return a builder as an ActionResult.
+            </summary>
+        </member>
+        <member name="M:TwilioFluent.Mvc3.TwilioFluentRootExtensions.ToActionResult(TwilioFluent.TwiML.Fluent.ITwilioFluentRoot)">
+            <summary>
+            Converts a builder into an ActionResult.
+            </summary>
+            <param name="builder">The builder to write as a result.</param>
+        </member>
+        <member name="M:TwilioFluent.Mvc3.TwilioFluentRootExtensions.End(TwilioFluent.TwiML.Fluent.ITwilioFluentRoot)">
+            <summary>
+            Converts a builder into an ActionResult.
+            </summary>
+            <param name="builder">The builder to write as a result.</param>
+        </member>
+        <member name="T:TwilioFluent.Mvc3.TwilioController">
+            <summary>
+            A standard MVC Controller with bonus Twilio helper functionality.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TwilioController.CallSid">
+            <summary>
+            A unique identifier for this call, generated by Twilio.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TwilioController.AccountSid">
+            <summary>
+            Your Twilio account id. It is 34 characters long, and always starts with the letters AC.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TwilioController.From">
+            <summary>
+            The phone number or client identifier of the party that initiated the call. Phone numbers
+            are formatted with a '+' and country code, e.g. +16175551212 (E.164 format). Client
+            identifiers begin with the client: URI scheme; for example, for a call from a client named
+            'tommy', the From parameter will be client:tommy.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TwilioController.To">
+            <summary>
+            The phone number or client identifier of the called party. Phone numbers are formatted
+            with a '+' and country code, e.g. +16175551212 (E.164 format). Client identifiers begin
+            with the client: URI scheme; for example, for a call to a client named 'jenny', the To
+            parameter will be client:jenny.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TwilioController.ApiVersion">
+            <summary>
+            The version of the Twilio API used to handle this call. For incoming calls, this is
+            determined by the API version set on the called number. For outgoing calls, this is the
+            API version used by the outgoing call's REST API request.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TwilioController.ForwardedFrom">
+            <summary>
+            This parameter is set only when Twilio receives a forwarded call, but its value depends
+            on the caller's carrier including information when forwarding. Not all carriers support
+            passing this information.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TwilioController.FromCity">
+            <summary>
+            The city of the caller.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TwilioController.FromState">
+            <summary>
+            The state or province of the caller.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TwilioController.FromZip">
+            <summary>
+            The postal code of the caller.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TwilioController.FromCountry">
+            <summary>
+            The country of the caller.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TwilioController.ToCity">
+            <summary>
+            The city of the called party.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TwilioController.ToState">
+            <summary>
+            The state or province of the called party.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TwilioController.ToZip">
+            <summary>
+            The postal code of the called party.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TwilioController.ToCountry">
+            <summary>
+            The country of the called party.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TwilioController.CallStatus">
+            <summary>
+            A descriptive status for the call. The value is one of queued, ringing, in-progress,
+            completed, busy, failed or no-answer. See the CallStatus section below for more details.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TwilioController.Direction">
+            <summary>
+            Indicates the direction of the call. In most cases this will be inbound, but if you
+            are using Dial it will be outbound-dial.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TwilioController.DialData">
+            <summary>
+            Gets the dial callback data.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TwilioController.GatherData">
+            <summary>
+            Gets the gather callback data.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TwilioController.RecordData">
+            <summary>
+            Gets the record callback data.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TwilioController.SmsData">
+            <summary>
+            Gets the SMS callback data.
+            </summary>
+        </member>
+        <member name="P:TwilioFluent.Mvc3.TwilioController.TranscribeData">
+            <summary>
+            Gets the transcribe callback data.
+            </summary>
+        </member>
+        <member name="T:TwilioFluent.Mvc3.TwilioRequestValidator">
+            <summary>
+            Provides Twilio request verification
+            </summary>
+        </member>
+        <member name="F:TwilioFluent.Mvc3.TwilioRequestValidator.TwilioSignatureHeader">
+            <summary>
+            The name of the signature header added by Twilio.
+            </summary>
+        </member>
+        <member name="M:TwilioFluent.Mvc3.TwilioRequestValidator.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TwilioFluent.Mvc3.TwilioRequestValidator"/> class.
+            </summary>
+            <param name="authToken">Your application's Twilio auth token.</param>
+        </member>
+        <member name="M:TwilioFluent.Mvc3.TwilioRequestValidator.Validate(System.Web.HttpRequestBase)">
+            <summary>
+            Validates the Twilio signature on the specified request.
+            Cannot detect replay attacks, so use of SSL + Client Authentication is recommended.
+            </summary>
+            <param name="request">The request.</param>
+            <returns></returns>
+        </member>
+        <member name="T:TwilioFluent.Mvc3.TwilioResult">
+            <summary>
+            Writes a Twilio response to the output stream.
+            </summary>
+        </member>
+        <member name="F:TwilioFluent.Mvc3.TwilioResult.MimeType">
+            <summary>
+            The Twilio response Mime Type.
+            </summary>
+        </member>
+        <member name="M:TwilioFluent.Mvc3.TwilioResult.#ctor(TwilioFluent.TwiML.Fluent.ITwilioFluentRoot)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TwilioFluent.Mvc3.TwilioResult"/> class.
+            </summary>
+            <param name="builder">The builder to wrap.</param>
+        </member>
+        <member name="M:TwilioFluent.Mvc3.TwilioResult.ExecuteResult(System.Web.Mvc.ControllerContext)">
+            <summary>
+            Enables processing of the result of an action method by a custom type that inherits from the <see cref="T:System.Web.Mvc.ActionResult"/> class.
+            </summary>
+            <param name="context">The context in which the result is executed. The context information includes the controller, HTTP content, request context, and route data.</param>
+        </member>
+    </members>
+</doc>

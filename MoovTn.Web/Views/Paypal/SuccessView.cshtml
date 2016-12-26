@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "SuccessView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<br /><br />
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <i class="fa fa-check round box-icon-large box-icon-center box-icon-success mb30"></i>
+            <h2 class="text-center">Successful Payment</h2>
+            <h5 class="text-center mb30">Now, you can purchase your card</h5>
+            @Html.ActionLink("Generate The Subscription Card", "DownloadPDF", "subscriptioncards","", htmlAttributes : new { @class= "btn icon-btn btn-default" })
+            @Html.ActionLink("Return", "Index", "subscriptioncards","", htmlAttributes : new { @class= "btn icon-btn btn-default" })
+
+        </div>
+    </div>
+    <div class="gap"></div>
+</div>
+

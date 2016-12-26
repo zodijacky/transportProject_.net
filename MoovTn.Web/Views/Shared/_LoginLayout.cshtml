@@ -1,0 +1,106 @@
+﻿<!DOCTYPE HTML>
+<html class="full">
+<head>
+    <title>Traveler - Login register</title>
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="keywords" content="Template, html, premium, themeforest" />
+    <meta name="description" content="Traveler - Premium template for travel companies">
+    <meta name="author" content="Tsoy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
+    <!-- /GOOGLE FONTS -->
+ 
+
+
+    <link rel="stylesheet" href="@Url.Content("~/Content/transport/css/bootstrap.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/transport/css/font-awesome.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/transport/css/icomoon.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/transport/css/styles.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/transport/css/mystyles.css")">
+    <script src="@Url.Content("~/Content/transport/js/modernizr.js")"></script>
+    <style>
+        label{
+            text-align: left !important;
+        }
+    </style>
+    @RenderSection("header", false)
+</head>
+<body class="full">
+    <!-- FACEBOOK WIDGET -->
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- /FACEBOOK WIDGET -->
+    <div class="global-wrap">
+        <div class="full-page">
+            <div class="bg-holder full">
+                <div class="bg-mask"></div>
+                <div class="bg-img" style="background-image:url(@Url.Content("~/Content/Images/subway.jpg"));"></div>
+                <div class="bg-holder-content full text-white">
+                    <a class="logo-holder" href="@Url.Action("Index","Home")">
+                        <img  src="@Url.Content("~/Content/transport/img/logo-invert.png")" alt="Image Alternative text" title="Image Title" />
+                    </a>
+                    <div class="full-center">
+                        <div class="container">
+                            <div class="row row-wrap" data-gutter="60">
+                                <div class="col-md-4">
+                                    <div class="visible-lg">
+                                        <h3 class="mb15">Welcome to MoovTN</h3>
+                                        <p>MoovTN is commited to protect your personal data all your informations are private and remain only in our possession </p>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    @RenderBody()
+                                </div>
+                                 
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+
+ 
+
+       @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+        <script src="@Url.Content("~/Content/transport/js/slimmenu.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/bootstrap-datepicker.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/bootstrap-timepicker.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/nicescroll.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/dropit.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/ionrangeslider.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/icheck.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/fotorama.js")"></script>
+
+        <script src="@Url.Content("~/Content/transport/js/typeahead.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/card-payment.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/magnific.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/owl-carousel.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/fitvids.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/tweet.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/countdown.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/gridrotator.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/custom.js")"></script>
+
+
+        <script src="@Url.Content("~/Content/transport/js/gridrotator.js")"></script>
+        <script src="@Url.Content("~/Content/transport/js/custom.js")"></script>
+    </div>
+</body>
+</html>
+
+

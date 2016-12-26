@@ -1,0 +1,59 @@
+﻿@model MyTransport.Domain.Models.subscriptioncard
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Card details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal" id="couleur">
+        
+
+        <dt>
+            @Html.DisplayNameFor(model => model.expired)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.expired)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.locked)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.locked)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.validityEnd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.validityEnd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.validityStart)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.validityStart)
+        </dd>
+        <dd>
+            @Html.DisplayFor(model => model.lines.First().name)
+        </dd>
+    </dl>
+</div>
+<p>
+    <a class="btn icon-btn btn-info" href="@Url.Content("/subscriptioncards/Index/")"><span class="glyphicon btn-glyphicon glyphicon-share img-circle text-info"></span>Back to list</a>  }
+</p>
+@section Styles {
+<style>
+    #couleur {
+        color: white;
+    }
+</style>}

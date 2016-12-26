@@ -1,0 +1,51 @@
+﻿@model MoovTn.Domain.Models.Claim
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Claim details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal" >
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.claimDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.claimDate,"Creation date")
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.question)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.question,"Question")
+        </dd>
+
+        @if (Model.questionRead==true)
+        {
+
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.response)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.response)
+        </dd>
+
+        }
+
+    </dl>
+</div>
+<p>
+
+    <a class="btn icon-btn btn-info" href="@Url.Content("/claims/Index/")"><span class="glyphicon btn-glyphicon glyphicon-share img-circle text-info"></span>Back to list</a>  
+</p>
+

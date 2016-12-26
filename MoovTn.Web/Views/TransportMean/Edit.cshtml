@@ -1,0 +1,90 @@
+﻿@model MoovTn.Domain.Models.TransportMean
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+ <div class="container">
+    <h2>Transport Mean</h2>
+    <div class="row">
+        <div class="col-md-3">
+            <aside class="sidebar-left">
+                <div class="sidebar-widget">
+                    <h4>Facebook</h4>
+                    <div class="fb-like-box" data-href="https://www.facebook.com/MoovTn" data-colorscheme="light" data-show-faces="1" data-header="1" data-show-border="1" data-width="233"></div>
+                </div>
+            </aside>
+        </div>
+        <div class="col-md-6">
+            @using (Html.BeginForm())
+        {
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+                    <h4>Edit Transport Mean</h4>
+
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.serial, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.EditorFor(model => model.serial, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.serial, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.state, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.DropDownListFor(model => model.state, new SelectList(
+                  new List<Object>{
+                       new { Value = "working" , Name = "Working"  },
+                       new { Value = "out of service" , Name = "Out of Service" },
+                    }, "Value", "Name"), new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.state, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.type, htmlAttributes: new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.DropDownListFor(model => model.type, new SelectList(
+                  new List<Object>{
+                       new { Value = "bus" , Name = "Bus"  },
+                       new { Value = "tram" , Name = "Tram" },
+                       new { Value = "metro" , Name = "Metro" },
+                       new { Value = "train" , Name = "Train" },
+                    }, "Value", "Name"), new { @class = "form-control" })
+                            @Html.ValidationMessageFor(model => model.type, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Update" class="btn btn-primary" style="float:right;" />
+                        </div>
+                    </div>
+                </div>
+        }
+
+        <div>
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    </div>
+
+
+    <div class="col-md-3">
+
+        <div class="sidebar-widget">
+
+            <img src="@Url.Content("~/Content/Images/tram.png")" />
+        </div>
+
+    </div>
+</div>
+
+
+</div>
+
+ 

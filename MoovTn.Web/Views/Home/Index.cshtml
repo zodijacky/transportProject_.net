@@ -1,0 +1,198 @@
+﻿@model MoovTn.Web.Models.TripStationModel
+
+@{
+    ViewBag.Title = "Home Page";
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="top-area show-onload">
+    <div class="bg-holder full">
+        <div class="bg-mask"></div>
+        <div class="bg-img" style="background-image:url(@Url.Content("~/Content/transport/img/2048x1365.png"));"></div>
+        <video class="bg-video hidden-sm hidden-xs" preload="auto" autoplay="true" loop="loop" muted="muted" poster="img/video-bg.jpg">
+            <source src="@Url.Content("~/Content/transport/media/loop.webm")" type="video/webm" />
+            <source src="@Url.Content("~/Content/transport/media/loop.mp4")" type="video/mp4" />
+        </video>
+       
+        <div class="bg-front full-height">
+            <div class="container rel full-height">
+                <div class="search-tabs search-tabs-bg search-tabs-bottom">
+                    <div class="tabbable">
+                        <ul class="nav nav-tabs" id="myTab">
+                            <li class="active">
+                                <a href="#tab-1" data-toggle="tab"><i class="fa fa-car"></i> <span>Plan Your Journey</span></a>
+                            </li>
+                            
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="tab-1">
+                                
+                               
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h4>Choose your departure and your destination stations</h4>
+                                        <br/>
+                                        <br/>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div style="float:right">
+                                            <div class="fb-send" data-href="https://www.facebook.com"></div>
+                                            <div class="fb-like" data-href="https://www.facebook.com/MoovTn" data-layout="button"></div>
+                                            <div class="fb-share-button" data-href="https://www.facebook.com/MoovTn" data-layout="button" value="share"></div>
+                                           
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                @using (Html.BeginForm())
+                                {
+                                    @Html.AntiForgeryToken()
+
+
+                                          
+
+
+                                           
+                                           
+                                                
+
+                                                <div class="row">
+                                                    
+                                                           
+                                                            <div class="col-md-3">
+                                                                <div class="form-group form-group-lg form-group-icon-left">
+                                                                    <i class="fa fa-map-marker input-icon"></i>
+                                                                    <label>Departure Station</label>
+                                                                    @Html.DropDownListFor(model => model.SDepId, Model.Stations, new { @class = "form-control" })
+                                                                </div> 
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group form-group-lg form-group-icon-left">
+                                                                    <i class="fa fa-map-marker input-icon"></i>
+                                                                    <label>Arrival Station</label>
+                                                                    @Html.DropDownListFor(model => model.SArrivId, Model.Stations, new { @class = "form-control" })
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group form-group-lg form-group-icon-left">
+                                                                    <i class="fa  fa-calendar input-icon"></i>
+                                                                    <label>Date</label>
+                                                                    @Html.TextBoxFor(model => model.Date, "{0:yyyy-MM-dd}", new { type = "date", @class = "form-control" })
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group form-group-lg form-group-icon-left">
+                                                                    <i class="fa fa-clock-o input-icon"></i>
+                                                                    <label>Time</label>
+                                                                    @Html.TextBoxFor(model => model.Time, "{0:HH:mm}", new { type = "time", @class = "form-control" })
+                                                                </div>
+                                                            </div>
+                                                      
+                                                  
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-offset-2 col-md-10">
+                                                        <input type="submit" style="float:right;"  value="Search" class="btn btn-primary btn-lg" />
+
+                                                    </div>
+                                                </div>
+                                <br />
+                                                <table class="table table-bordered table-striped table-booking-history">
+                                                    <tr>
+                                                        <th style="text-align: center">
+                                                            Arrival Time
+                                                        </th>
+
+                                                        <th style="text-align: center">
+                                                            Line
+                                                        </th>
+                                                        <th style="text-align: center">
+                                                            Transport Mean
+                                                        </th>
+                                                        <th style="text-align: center">
+                                                            Estimated Arrival Time
+                                                        </th>
+                                                        <th style="text-align: center">
+
+                                                        </th>
+                                                    </tr>
+
+                                                    @foreach (var item in Model.trips)
+                                                    {
+                                                        <tr>
+                                                            <td style="text-align: center">
+                                                                @Html.DisplayFor(model => model.ArrivalTime)
+                                                            </td>
+
+                                                            <td style="text-align: center">
+                                                                @Html.DisplayFor(modelItem => item.line.name)
+                                                            </td>
+                                                            <td style="text-align: center">
+                                                                @Html.DisplayFor(modelItem => item.line.type)
+                                                            </td>
+                                                            <td style="text-align: center">
+                                                                @Html.DisplayFor(model => model.EstimationTime)
+                                                            </td>
+                                                            <td style="text-align: center">
+
+                                                                <a href='@Url.Action("Details", "Line")?id= @Html.DisplayFor(modelItem => item.line.id)'>Line Details</a>
+                                                            </td>
+                                                        </tr>
+                                                    }
+
+                                                </table>
+
+                                               @* <div class="modal fade" id="myModal" role="dialog">
+                                                    <div class="modal-dialog">
+
+                                                        <!-- Modal content-->
+                                                        <div class="modal-content">
+
+                                                            <p>hello</p>
+                                                        </div>
+                                                    </div>
+                                                </div>*@
+
+
+
+
+
+                                }
+                            </div>
+                        
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    @section footer{
+        @if (Model.trips.Count()>0){
+            <script>
+                
+                //$("#myModal").modal();
+            </script>
+
+        }
+
+        }
+ 

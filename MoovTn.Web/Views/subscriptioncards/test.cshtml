@@ -1,0 +1,56 @@
+﻿@model MoovTn.Web.Models.GeneratePDFModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>GeneratePDF</title>
+</head>
+<body>
+    <div>
+        <img src="@Model.img" height="150" width="150"/>
+    </div>
+
+    <div>
+        @Html.LabelFor(model => model.Surname, "Last name :    ")
+
+        @Html.Raw(Model.Surname)
+    </div>
+    <br />
+
+    <div>
+        @Html.LabelFor(model => model.Name, "First name :    ")
+
+        @Html.Raw(Model.Name)
+    </div>
+    <br />
+
+    <div>
+        @Html.LabelFor(model => model.DateCreation, "Creation Date :    ")
+
+        @Html.Raw(Model.DateCreation.ToShortDateString())
+    </div>
+    <br />
+
+    <div>
+        @Html.LabelFor(model => model.Expire, "Expiration Date :    ")
+
+        @Html.Raw(Model.Expire.ToShortDateString())
+    </div>
+    <br />
+
+
+
+    <div>
+        @Html.LabelFor(model => model.Lines, "Lines :    ")
+        @Html.Raw(Model.Lines.First().name)
+    </div>
+   
+
+</body>
+</html>

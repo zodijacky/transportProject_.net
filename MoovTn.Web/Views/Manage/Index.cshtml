@@ -1,0 +1,132 @@
+﻿@model MoovTn.Web.Models.IndexViewModel
+@{
+    ViewBag.Title = "Manage";
+}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <aside class="user-profile-sidebar">
+                    <div class="user-profile-avatar text-center">
+                        <img src="@Url.Content("~/Content/Images/profile.png")" alt="Image Alternative text" title="AMaze" />
+                        <h5>@Model.FirstName @Model.lastName</h5>
+
+                    </div>
+                    <ul class="list user-profile-nav">
+                        <li>
+                            <a href="#"><i class="fa fa-phone"></i>@Model.PhoneNumber</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-envelope"></i>@Model.Email</a>
+                        </li>
+
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-6">
+                       @using (Html.BeginForm("Edit", "Manage", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                       {
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary("", new { @class = "text-danger" })
+                            <h4>Personal Infomation</h4>
+                            <div class="form-group form-group-icon-left">
+                                <i class="fa fa-user input-icon"></i>
+                                <label>First Name</label>
+                                @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+                            </div>
+                            <div class="form-group form-group-icon-left">
+                                <i class="fa fa-user input-icon"></i>
+                                <label>Last Name</label>
+                                @Html.TextBoxFor(m => m.lastName, new { @class = "form-control" })
+                            </div>
+                            <div class="form-group form-group-icon-left">
+                                <i class="fa fa-envelope input-icon"></i>
+                                <label>E-mail</label>
+                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                            </div>
+                            <div class="form-group form-group-icon-left">
+                                <i class="fa fa-phone input-icon"></i>
+                                <label>Phone Number</label>
+                                @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control" })
+                            </div>
+
+                            <div class="form-group form-group-icon-left">
+                                <i class="fa fa-credit-card input-icon"></i>
+                                <label>CIN</label>
+                                @Html.TextBoxFor(m => m.Cin, new { @class = "form-control" })
+                            </div>
+
+
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-md-10">
+                                    <input type="submit" class="btn btn-default" value="Validate" />
+                                </div>
+                            </div>
+                       }
+                    </div>
+                    <div class="col-md-6">
+                        <p class="text-success">@ViewBag.StatusMessage</p>
+                        <div>
+                            <h4>Change your account settings</h4>
+                            <hr />
+                            <dl class="dl-horizontal">
+                                <dt  style="text-align:left;">Password:</dt>
+                                <dd>
+                                    [
+                                    @if (Model.HasPassword)
+            {
+                                        @Html.ActionLink("Change your password", "ChangePassword")
+                                    }
+                                    else
+                                    {
+                                        @Html.ActionLink("Create", "SetPassword")
+                                    }
+                                    ]
+                                </dd>
+                                <dt  style="text-align:left;">External Logins:</dt>
+                                <dd>
+                                    @Model.Logins.Count [
+                                    @Html.ActionLink("Manage", "ManageLogins") ]
+                                </dd>
+                                @*
+                Phone Numbers can used as a second factor of verification in a two-factor authentication system.
+
+                 See <a href="http://go.microsoft.com/fwlink/?LinkId=403804">this article</a>
+                    for details on setting up this ASP.NET application to support two-factor authentication using SMS.
+
+                 Uncomment the following block after you have set up two-factor authentication
+                                *@
+
+                                <dt style="text-align:left;">Phone Number:</dt>
+                                <dd>
+                                    @(Model.PhoneNumber ?? "None") [
+                                    @if (Model.PhoneNumber != null)
+                                    {
+                                        @Html.ActionLink("Change", "AddPhoneNumber")
+                                        @: &nbsp;|&nbsp;
+                                        @Html.ActionLink("Remove", "RemovePhoneNumber")
+                                    }
+                                    else
+                                    {
+                                        @Html.ActionLink("Add", "AddPhoneNumber")
+                                    }
+                                    ]
+                                </dd>
+                                 
+                            </dl>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+

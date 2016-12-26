@@ -1,0 +1,234 @@
+﻿@model MoovTn.Web.Models.TripViewModel
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<div class="container">
+    <h2>Trip</h2>
+    <div class="row">
+        <div class="col-md-3">
+            <aside class="sidebar-left">
+                <div class="sidebar-widget">
+                    <h4>Facebook</h4>
+                    <div class="fb-like-box" data-href="https://www.facebook.com/MoovTn" data-colorscheme="light" data-show-faces="1" data-header="1" data-show-border="1" data-width="233"></div>
+                </div>
+            </aside>
+        </div>
+        <div class="col-md-9">
+            @using (Html.BeginForm())
+{
+
+
+                <div class="form-horizontal">
+                    <h4>New Trip</h4>
+
+
+                    <br />
+                    <div class="row">
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="col-md-6">
+                        <div class="form-group">
+                          
+                            
+                                <div class="row">
+                                    <label  >Departure time:</label>
+                                    <div class="col-md-5">
+                                        @Html.TextBoxFor(model => model.DepartureDate, "{0:yyyy-MM-dd}",new {  type = "date", @class = "form-control" })
+                                    </div>
+                                    <div class="col-md-4">
+                                        @Html.TextBoxFor(model => model.DepartureTime, "{0:HH:mm}", new { type = "time", @class = "form-control" })
+
+
+                                    </div>
+                                </div>
+                                @Html.ValidationMessageFor(model => model.DepartureTime, "", new { @class = "text-danger" })
+                            
+                        </div>
+                    </div><div class="col-md-6">
+                        <div class="form-group">
+                            <label  >Arrival time:</label>
+                            
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        @Html.TextBoxFor(model => model.ArrivalDate, "{0:yyyy-MM-dd}", new { type = "date", @class = "form-control" })
+                                    </div>
+                                    <div class="col-md-4">
+                                        @Html.TextBoxFor(model => model.ArrivalTime, "{0:HH:mm}", new { type = "time", @class = "form-control" })
+
+
+                                    </div>
+                                </div>
+
+                                @Html.ValidationMessageFor(model => model.ArrivalTime, "", new { @class = "text-danger" })
+                            </div>
+                       
+                    </div>
+
+
+
+                </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label  >Type:</label>
+                                <div class="col-md-9">
+
+                                    @Html.DropDownListFor(model => model.Type, new SelectList(
+                  new List<Object>{
+                       new { Value = "" , Name = "Select A Trip Type"  },
+                       new { Value = "bus" , Name = "Bus Trip"  },
+                       new { Value = "tram" , Name = "Tram Trip" },
+                       new { Value = "metro" , Name = "Metro Trip" },
+                       new { Value = "train" , Name = "Train Trip" },
+                    }, "Value", "Name"), new { @class = "form-control" })
+
+                                    @Html.ValidationMessageFor(model => model.Type, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label  >Line:</label>
+                                <div class="col-md-8">
+
+                                    @Html.DropDownListFor(model => model.Line, Model.Lines, new { @class = "form-control" })
+
+                                    @Html.ValidationMessageFor(model => model.Line, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label >Transport Mean:</label>
+                                <div class="col-md-8">
+
+                                    @Html.DropDownListFor(model => model.Transport, Model.TransportMeans, new { @class = "form-control" })
+
+                                    @Html.ValidationMessageFor(model => model.Transport, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+ 
+              <br /><br /><br />
+            <div class="row">
+                    <div class="col-md-10"><div>
+    @Html.ActionLink("Back to List", "Index")
+</div></div>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Create" class="btn btn-primary" id="sub" />
+
+                        </div>
+                    </div>
+                </div></div>
+
+       
+          
+            </div>
+}
+
+        
+        </div>
+    </div>
+
+
+</div>
+
+@section footer {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script language="javascript">
+
+        $("#Line").prop('disabled', true);
+        $("#Transport").prop('disabled', true);
+        $("#sub").prop('disabled', true);
+    </script>
+    <script language="javascript">
+        $(document).ready(function () {
+
+            $("#Type").change(function () {
+
+                // this will call when Country Dropdown select change
+                var type = $("#Type").val();
+
+                
+
+                if (type != '') {
+
+                    var line = $("#Line");
+                    line.empty(); // this line is for clear all items from State dropdown
+                    $("#Line").prop('disabled', false);
+                    line.append($("<option></option").val("").html("Select A Line"));
+                    
+                    // Here I will call Controller Action via Jquery to load State for selected Country
+                    $.ajax({
+                        url: "@Url.Action("GetLinesJson", "Trip")",
+                        type: "GET",
+                        data: { type: type},
+                        dataType: "json",
+                        success: function (data) {
+                            $.each(data, function (i, val) {
+                                line.append(
+                                        $("<option></option>").val(val.Id).html(val.Name)
+                                    );
+                            });
+                        },
+                        error: function () {
+                            alert("Error!");
+                        }
+                    });
+                }
+            });
+
+            $("#Line").change(function () {
+
+                // this will call when Country Dropdown select change
+                var type = $("#Type").val();
+
+                if (type != '') {
+
+                    var transport = $("#Transport");
+
+                    var departureDate = $("#DepartureDate").val();
+                    var departureTime = $("#DepartureTime").val();
+
+                    var arrivalDate = $("#ArrivalDate").val();
+                    var arrivalTime = $("#ArrivalTime").val();
+
+                    transport.empty(); // this line is for clear all items from State dropdown
+                    $("#Transport").prop('disabled', false);
+                    transport.append($("<option></option").val("").html("Select A Transport Mean"));
+
+                    // Here I will call Controller Action via Jquery to load State for selected Country
+                    $.ajax({
+                        url: "@Url.Action("GetTransportMeansJson", "Trip")",
+                        type: "GET",
+                        data: { type: type, departureDate: departureDate, departureTime: departureTime, arrivalDate: arrivalDate, arrivalTime: arrivalTime },
+                        dataType: "json",
+                        success: function (data) {
+                            $.each(data, function (i, val) {
+                                transport.append(
+                                        $("<option></option>").val(val).html(val)
+                                    );
+                            });
+                        },
+                        error: function () {
+                            alert("Error! Transport Mean");
+                        }
+                    });
+                }
+            });
+            $("#Transport").change(function () {
+                var transport = $("#Transport").val();
+                if (transport != '') {
+                    $("#sub").prop('disabled', false);
+                }
+            });
+        });
+    </script>
+}
+

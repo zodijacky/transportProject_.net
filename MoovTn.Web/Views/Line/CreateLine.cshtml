@@ -1,0 +1,276 @@
+﻿@model MoovTn.Web.Models.LineViewModel
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+    <h2>Line</h2>
+    <div class="row">
+        <div class="col-md-3">
+            <aside class="sidebar-left">
+                <div class="sidebar-widget">
+                    <h4>Facebook</h4>
+                    <div class="fb-like-box" data-href="https://www.facebook.com/MoovTn" data-colorscheme="light" data-show-faces="1" data-header="1" data-show-border="1" data-width="233"></div>
+                </div>
+            </aside>
+        </div>
+        <div class="col-md-9">
+            
+                @using (Html.BeginForm())
+{
+
+
+
+                    <h4>New Line</h4>
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                @Html.LabelFor(model => model.Type, htmlAttributes: new { @class = "control-label col-md-2" })
+                                <div class="col-md-10">
+                                    @Html.DropDownListFor(model => model.Type, new SelectList(new List<Object> {
+               new {Value="",Name="Select A Line Type"  },
+               new {Value="bus",Name="Bus Line"  },
+               new {Value="tram",Name="Tram Line"  },
+               new {Value="train",Name="Train Line"  },
+               new {Value="metro",Name="Metro Line"  },
+
+           }, "Value", "Name"), new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.Type, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-md-4">
+
+                            @Html.ListBoxFor(model => model.AvailableStations,
+                     new MultiSelectList(
+                            Model.AvailableStations.Select(l => new { Value = l.id.ToString(), Text = l.name }),
+                            "Value",
+                            "Text"),
+                    new { size = "6", })
+
+
+
+
+                        </div>
+                        <div class="col-md-2">
+
+                            <input type="button" id="left" value="<" class="btn btn-info" />
+                            <input type="button" id="right" value=">" class="btn btn-info" />
+                          
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                
+                                <div class="col-md-8">
+                                    @Html.ListBoxFor(model => model.SelectedStations,
+                                     new MultiSelectList(
+                                            Model.SelectedStations.Select(l => new { Value = l.id.ToString(), Text = l.name }),
+                                            "Value",
+                                            "Text"),
+                                    new { size = "6", })
+                                </div>
+                                <div class="col-md-offset-2 col-md-2" >
+                                    <br/>
+                                    <div class="row">
+                                        <input type="button" id="btnMoveSectionUp" value="↑" class="btn btn-danger" />
+                                    </div>
+                                    <br/>
+                                    <div class="row">
+                                        <input type="button" id="btnMoveSectionDown" value="↓" class="btn btn-danger" />
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            
+                           
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="button" value="Create" class="btn btn-primary" id="submit" style="float:right" />
+                        </div>
+                    </div>
+
+    }
+
+                <div>
+                    @Html.ActionLink("Back to List", "Index")
+                </div>
+
+
+            
+        </div>
+    </div>
+
+
+
+</div>
+@section header{
+    select{
+        width: 100%;
+    }
+    }
+
+@section footer {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+
+    var rightList = [];
+    </script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#Type").change(function () {
+
+                // this will call when Country Dropdown select change
+                var type = $("#Type").val();
+
+                if (type!='') {
+
+                    var stations = $("#AvailableStations");
+                    stations.empty(); // this line is for clear all items from State dropdown
+                    $('#SelectedStations').empty();
+                    rightList = [];
+                    //$("#AvailableStations").prop('disabled', false);
+                    //stations.append($("<option></option").val("").html("Select A Line"));
+
+                    // Here I will call Controller Action via Jquery to load State for selected Country
+                    $.ajax({
+                        url: "@Url.Action("GetStationsJson", "Line")",
+                        type: "GET",
+                    data: { type: type },
+                    dataType: "json",
+                    success: function (data) {
+
+                        $.each(data, function (i, val) {
+                            stations.append(
+                                    $("<option></option>").val(val.Id).html(val.Name)
+                                );
+                        });
+                    },
+                    error: function () {
+                        alert("Error!");
+                    }
+                });
+            }
+            });
+        });
+    </script>
+    <script type="text/javascript">
+
+
+        $(function () {
+            function moveItems(origin, dest) {
+                rightList.push($(origin).find(':selected').val());
+                $(origin).find(':selected').appendTo(dest);
+                console.log(rightList);
+
+            }
+
+
+
+            $('#left').click(function () {
+                moveItems('#SelectedStations', '#AvailableStations');
+            });
+
+            $('#right').on('click', function () {
+
+                moveItems('#AvailableStations', '#SelectedStations');
+
+            });
+
+
+        });
+    </script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#submit").click(function () {
+
+                // this will call when Country Dropdown select change
+                var type = $("#Type").val();
+                var name = $("#Name").val();
+
+                if (type!='' && name!='' && rightList.length>0) {
+
+
+
+
+                     $.ajax({
+                        url: "@Url.Action("CreateLine", "Line")",
+                        type: "POST",
+                    data: { type: type, name: name, liste: rightList },
+                    dataType: "json",
+                    success: function (response) {
+                        if (response.result == 'Redirect') {
+                            window.location = response.url;
+                        }
+
+                    },
+                    error: function () {
+                        alert("Error!");
+                    }
+                });
+            }
+            });
+        });
+    </script>
+    <script>
+        $("#btnMoveSectionUp").click(function (e) {
+            var curr = $("#SelectedStations option:selected");
+            if (curr.length == 0) return;
+            if (curr.index() > 0) {
+                var selected = $('#SelectedStations').find(':selected').val();
+                var i = rightList.indexOf(selected);
+                var temp = rightList[i];
+                rightList[i] = rightList[i - 1];
+                rightList[i - 1] = temp;
+                var prev = curr.prev();
+                curr.insertBefore(prev);
+
+                console.log(rightList);
+            }
+        });
+        $("#btnMoveSectionDown").click(function (e) {
+            var curr = $("#SelectedStations option:selected");
+            if (curr.length == 0) return;
+            if (curr.index() < $("#SelectedStations option").length - 1) {
+
+
+                var selected = $('#SelectedStations').find(':selected').val();
+                var i = rightList.indexOf(selected);
+                var temp = rightList[i];
+                rightList[i] = rightList[i + 1];
+                rightList[i + 1] = temp;
+                var next = curr.next();
+                curr.insertAfter(next);
+
+                console.log(rightList);
+            }
+        });
+    </script>
+}
+
+

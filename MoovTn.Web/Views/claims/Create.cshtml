@@ -1,0 +1,77 @@
+﻿@model MoovTn.Domain.Models.Claim
+
+    @{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+<div class="container">
+    <h2>A new claim<br></h2>
+
+    <div class="row">
+        <div class="col-md-3">
+            <aside class="sidebar-left">
+                <div class="sidebar-widget">
+                    <h4>Facebook</h4>
+                    <div class="fb-like-box" data-href="https://www.facebook.com/MoovTn" data-colorscheme="light" data-show-faces="1" data-header="1" data-show-border="1" data-width="233"></div>
+                </div>
+            </aside>
+        </div>
+        <div class="col-md-6"> @using (Html.BeginForm())
+            {
+            @Html.AntiForgeryToken()
+
+ 
+    
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+
+    <div class="row"><div class="form-group">
+    <div class="col-md-2">
+        @Html.LabelFor(model => model.question, "Your Question", htmlAttributes: new { @class = "control-label col-md-2",  @id="couleur"})
+    </div>   <div class="col-md-10">
+        @Html.TextAreaFor(model => model.question, new { cols = 45, @rows = 6 })
+        @Html.ValidationMessageFor(model => model.question, "", new { @class = "text-danger" })
+    </div>
+</div></div>
+    <div class="row">
+            
+        <div class="col-md-2"></div>
+        <div class="col-md-10"> <div class="g-recaptcha" data-sitekey="6LcMtxATAAAAAMC5FKE9-_QqYLwxBooxnUFTbINm"></div></div>
+        </div>
+   <br />
+         <div class="row">        @ViewBag.Message
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+
+                <div class="col-md-4">
+                    <a href="@Url.Content("/claims/Index/")"><span class="glyphicon btn-glyphicon glyphicon-share img-circle text-info"></span>Back to list</a>
+                </div><div class="col-md-4"><input type="submit" value="Create" class="btn btn-primary" style="float:right;" />
+    </div><div class="col-md-4">
+        
+    </div>
+</div>
+        </div></div>
+  
+
+ 
+            }
+
+ </div><div class="col-md-3">
+
+    <div class="sidebar-widget">
+
+        <img src="@Url.Content(" ~/Content/Images/tram.png")"/>
+    </div>
+
+</div></div>
+           
+        </div>
+        @section header{
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        }
+
+        @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+        }
